@@ -55,9 +55,16 @@ public class DriveTrain extends SubsystemBase {
       m_drive.driveCartesian(ySpeed, xSpeed, zRotation);
     }
   }
-  public void resetEncoder(){
+  public void resetAngle(){
     ahrs.reset();
+    m_frontLeftMotor.
   }
+  public double GetAverageEncoderPosition(){
+    return 0;
+  }
+  public double FeetToClicks(double feet)(
+    return feet *5;
+  )
   public void changeDrive(){
     if (isFieldOrintated){
       isFieldOrintated = false;
